@@ -1,5 +1,6 @@
-0x09. Web infrastructure design
+<h3>0x09. Web infrastructure design</h3>
 
+<p>For this project, we expect you to look at these concepts:</p>
 <table>
     <thead>
         <tr>
