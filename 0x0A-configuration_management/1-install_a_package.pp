@@ -1,6 +1,11 @@
-#This file instals flask package from 'pip'
-package { 'flask':
+# Install a package
+
+package { 'Flask':
   ensure   => '2.1.0',
-  name     => flask,
-  provider => pip3,
+  provider => 'pip3',
+}
+
+package { 'Werkzeug':
+  ensure   => '2.0.1',
+  provider => 'pip3',
 }
