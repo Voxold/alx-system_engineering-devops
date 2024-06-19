@@ -1,2 +1,12 @@
 #!/bin/bash
-rm *~
+
+# Loop through all files ending with ~ in the current directory
+for file in *~; do
+  # Check if the file exists (to handle the case where no such files are found)
+  if [ -e "$file" ]; then
+    echo "Deleting file: $file"
+    rm "$file"
+  fi
+done
+
+echo "All files ending with ~ have been deleted."
